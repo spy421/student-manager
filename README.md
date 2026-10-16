@@ -19,7 +19,7 @@ A simple student management application built with Python. The project allows us
 - JSON
 - Git and GitHub
 
-## Getting Started
+## How to Run
 
 ### 1. Clone the repository
 
@@ -28,23 +28,12 @@ git clone https://github.com/spy421/student-manager.git
 cd student-manager
 ```
 
-### 2. Prepare the data file
+### 2. Create the data file
 
-Create a `students.json` file in the project directory with the following sample data:
+Copy the example data file:
 
-```json
-[
-    {
-        "name": "Dana",
-        "age": 20,
-        "major": "Computer Science"
-    },
-    {
-        "name": "Alex",
-        "age": 22,
-        "major": "Data Analytics"
-    }
-]
+```bash
+cp students.example.json students.json
 ```
 
 ### 3. Run the application
@@ -52,6 +41,8 @@ Create a `students.json` file in the project directory with the following sample
 ```bash
 python3 main.py
 ```
+
+Note: The application saves student records in `students.json`. This file is excluded from Git to help keep local data private.
 
 ## Project Structure
 
